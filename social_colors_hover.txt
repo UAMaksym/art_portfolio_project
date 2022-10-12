@@ -1,0 +1,19 @@
+    .behanse_svg:hover {
+      fill: #053eff;
+    }
+
+    .twitter_svg:hover {
+      fill: #1DA1F2;
+    }
+
+    .facebook_svg:hover {
+      fill: #4267B2;
+    }
+
+    .inst_svg:hover {
+      fill: url(#inst_gr);
+    }
+
+    .pinterest_svg:hover {
+      fill: #E60023;
+    }

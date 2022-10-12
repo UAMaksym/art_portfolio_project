@@ -3,11 +3,17 @@ $default-font: "Inter", sans-serif;
 $deafault-font-weight: 500;
 $deafault-font-size: 16px;
 
-// Page collors
-$backgorund: #fff;
-
 // Main text color
 $text: #0E0E0E;
+$white: #fff;
+$black: #000;
+
+
+// Social links icons color:
+$facebook: #3B5998;
+$twitter: #2C6A93;
+$inst: #a3094c;
+
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
