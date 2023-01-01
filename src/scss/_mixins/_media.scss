@@ -28,9 +28,36 @@
   }
 }
 
-// Custom devices
-@mixin rwd($screen) {
-  @media (min-width: $screen+"px") {
-    @content;
+
+// Middle-line for text 
+@mixin middle_line {
+  color: $text;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: black;
+    width: 0%;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s linear;
   }
+
+  &.active::after {
+    width: 110%;
+  }
+}
+
+// Button 
+@mixin btn {
+  padding: 13px 61px 15px 36px;
+  text-decoration: none;
+  line-height: 26px;
+  position: relative;
+  color: #fff;
+  background-color: #0e0e0e;
 }
