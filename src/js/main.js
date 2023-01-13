@@ -5,6 +5,8 @@ const introInfo = document.querySelector('.intro_info');
 const circle = document.querySelector('.circle');
 const listItems = document.querySelectorAll('.list_item');
 const listProjectItem = document.querySelectorAll('.project_topics_list_item');
+const footerBtn = document.querySelector('.footer_right_btn');
+
 
 for (let i = 0; i < listItems.length; i++) {
     listItems[i].addEventListener('click', () => {
@@ -27,4 +29,13 @@ burger.addEventListener('click', function () {
     introInfo.classList.toggle('active');
     circle.classList.toggle('active');
 })
+
+footerBtn.addEventListener('click', function(e) {
+    e.preventDefault(); // шоб кнопка не скролила у верх
+    footerBtn.classList.add('footer_btn_active');
+
+    setTimeout(function(){
+        footerBtn.innerHTML = 'Thanks! Check Your Email.'
+    }, 500) 
+});
 
