@@ -1,0 +1,87 @@
+@import "vars";
+@import "_mixins/media";
+
+.main_contnet_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects_line {
+    margin: 130px 0 30px 0;
+    border: none;
+    background-color: $text;
+    height: 1px;
+    width: 100%;
+}
+
+.project_topics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 90px;
+
+    &_list_item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    &_list_item {
+        @include middle_line;
+    }
+
+    &_link {
+        text-decoration: none;
+        color: $text;
+    }
+}
+
+.projects_wrapper {
+    column-count: 3;
+    column-gap: 30px;
+    width: 100%;
+}
+
+.projects {
+
+    img {
+        min-width: 100%;
+    }    
+
+    figure {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        margin-bottom: 30px;
+        break-inside: avoid;
+    }
+}
+
+.projects_button {
+    margin: 100px 0 155px;
+    text-decoration: none;
+    color: $text;
+    background-color: $gray;
+    padding: 46px 36px;
+    border-radius: 100%;
+}
+
+.title_offer {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0em;
+    max-width: 600px;
+    text-align: center;
+}
+
+.offer_btn {
+    @include btn;
+    margin: 50px 0 160px;
+}
